@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/order/order",
+    "pages/logs/logs",
+    "pages/type/type",
+    "pages/prodList/prodList",
+    "pages/detail/detail",
+    "pages/orderbuy/orderbuy",
+    "pages/Phopping/Phopping",
+    "pages/login/login",
+    "pages/registered/registered"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "每日新鲜果蔬商城",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}

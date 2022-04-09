@@ -1,0 +1,43 @@
+<!--pages/Phopping/Phopping.wxml-->
+<view class="page">
+  <view class="weui-cells weui-cells_after-title" style="margin-bottom:4rem;">
+    <view class="cu-card article {{isCard?'no-card':''}}" wx:for="{{items}}" wx:key="{{items.id}}">
+      <view class="cu-item shadow" bindtap="goDetail">
+        <view class="content">
+          <image src="{{item.prod.img}}" mode="aspectFill"></image>
+          <view class="desc">
+            {{item.prod.prodName}}
+            <view class="text-content"> {{item.prod.content}}</view>
+            <view>
+              <view class="cu-tag bg-red light sm round">促销价：￥{{item.prod.price}}</view>
+              <view class="cu-tag bg-green light sm round">数量：{{item.num}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <view class="footer">
+
+
+    <view class="total">
+      <span style="margin-right:0.5rem">
+        <span> 合计：</span>
+        <span class="span">￥{{sumPrice}}</span>
+      </span>
+
+      <button class="weui-btn mini-btn btn" bindtap="contact" size="mini">结算</button>
+    </view>
+
+
+  </view>
+
+
+
+
+
+</view>

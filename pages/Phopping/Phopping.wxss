@@ -1,0 +1,30 @@
+/* pages/Phopping/Phopping.wxss */
+
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  min-height: 50px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e1e3e4;
+}
+
+.total {
+  position: absolute;
+  right: 0.5rem;
+  top: -1rem;
+}
+
+.span {
+  color: red;
+  font-size: 16px;
+}
+
+.btn {
+  background: #ff6348;
+  color: #fff;
+  border-radius: 17px;
+  top: 0.5rem; 
+}

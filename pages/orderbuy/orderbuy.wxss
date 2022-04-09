@@ -1,0 +1,40 @@
+/* pages/order/order.wxss */
+
+.detail {
+  background: #f1f2f6;
+}
+
+.address {
+  width: 93%;
+  margin: 30rpx;
+  background: #fff;
+  height: auto;
+  position: relative;
+}
+
+.details {
+  font-size: 13px;
+}
+
+.Subtotal {
+  float: right;
+  font-size: 13px;
+}
+
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  min-height: 50px;
+  align-items: center;
+  background: #f2f3f4;
+  border: 1px solid #e1e3e4;
+}
+
+.btn {
+  background: #ff6348;
+  color: #fff;
+  border-radius: 17px;
+  margin-left: 1rem;
+}

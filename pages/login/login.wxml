@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="background">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">用户名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" value="{{ user }}" bindinput="user" placeholder="用户名" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">密码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" value="{{ pwd }}" bindinput="pwd" placeholder="密码" />
+      </view>
+    </view>
+  </view>
+      <button type="primary" bindtap='submite'>登录</button>
+</view>

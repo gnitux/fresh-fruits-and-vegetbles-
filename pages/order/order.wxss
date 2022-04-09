@@ -1,0 +1,17 @@
+/* pages/order.wxss */
+.details {
+  font-size: 13px;
+  margin-top: -1.8rem;
+  float: right;
+}
+.detail{
+  margin-top: 0.5rem;
+}
+.btn{
+  background: none;
+  border: solid salmon 1px;
+  color: salmon;
+  border-radius: 17px;
+  float: right;
+  margin-right: 1rem;
+}

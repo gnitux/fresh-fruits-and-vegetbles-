@@ -1,0 +1,49 @@
+<view style="position: absolute;z-index: 1;color: #fff;right: 1rem;">
+
+  <text bindtap="gologin">| 登录 </text>
+  <text bindtap="goregistered">| 注册</text>
+</view>
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl">{{useriofo.userName}}
+    </view>
+    <view class="margin-top-sm">
+      <text>欢迎使用商城系统</text>
+    </view>
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">我的订单</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+        <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">联系客服</text>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- <view class="cu-tabbar-height"></view> -->
+</scroll-view>
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <!-- <view class="cu-bar tabbar margin-bottom-xl bg-black"> -->
+      <view class="action text-gray" bindtap="goHome"> 
+        <view class="cuIcon-homefill"></view> 首页
+      </view>
+      <view class="action text-gray" bindtap="goType">
+        <view class="cuIcon-similar"></view> 分类
+      </view>
+      <view class="action text-gray" bindtap="goPhopping">
+        <view class="cuIcon-cart"></view>购物车
+      </view>
+        <view class="action text-orange">
+        <view class="cuIcon-homefill"></view> 我的
+      </view>
+</view>

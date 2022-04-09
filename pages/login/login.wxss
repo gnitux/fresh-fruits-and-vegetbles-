@@ -1,0 +1,7 @@
+/* pages/login/login.wxss */
+.background{
+  width: 96%;
+  height: auto;
+  margin: 15rpx;
+  background: #fff;
+}

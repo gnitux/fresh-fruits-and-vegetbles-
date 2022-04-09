@@ -1,0 +1,42 @@
+<scroll-view scroll-y class="scrollPage">
+<view>
+  <image src="{{recArr.img}}"></image>
+</view>
+<view class="title">{{recArr.prodName}}</view>
+
+<view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">{{recArr.unit}}{{recArr.price}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-rechargefill"></text> 抢购价</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">22</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-apps"></text>{{recArr.stock}}</view>
+    </view>
+  </view>
+  <view>
+    <image src="{{recArr.img}}"></image>
+    <image src="{{recArr.img}}"></image>
+    <image src="{{recArr.img}}"></image>
+    <image src="{{recArr.img}}"></image>
+    <image src="{{recArr.img}}"></image>
+    <image src="{{recArr.img}}"></image>
+  </view>
+</scroll-view>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <!-- <view class="cu-bar bg-white tabbar border shop"> -->
+      <button class="action" bindtap="contact">
+        <view class="cuIcon-homefill text-green">
+        </view>
+        商城首页
+      </button>
+      <view class="action" bindtap="goPhopping">
+        <view class="cuIcon-cart">        </view>
+        购物车
+      </view>
+      <view class="bg-orange submit" bindtap="goPhoppcard">加入购物车</view>
+      <view class="bg-red submit" bindtap="goOrder">立即订购</view>
+    <!-- </view> -->
+  </view>

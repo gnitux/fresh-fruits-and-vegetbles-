@@ -1,0 +1,17 @@
+<!--pages/order.wxml-->
+<view wx:for="{{commodity}}" wx:key="{{item.value}}">
+  <view class="cu-card article {{isCard?'no-card':''}}" style="margin-bottom:-1rem;">
+    <view class="cu-item shadow" bindtap="goDetail">
+
+      <view style="width:80%;background:#f1f2f6; margin: 70rpx;padding-left:1rem;font-size:14px;margin-top: 0.7rem;">
+        <image src="../../images/Receipt.png" style="margin-top:6px;width:0.8rem;height:0.8rem" /> 下单时间：{{item.orderTime}} {{item.status}}
+      </view>
+      <view class="weui-cells weui-cells_after-title details">
+        <view class="weui-cell">
+          <view style="opacity: 0.7;margin-right:1rem"> 总价：￥{{item.price}}</view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
